@@ -1,0 +1,46 @@
+.form-container {
+  
+ width: 60%;
+  margin: 7rem 20%;
+  padding: auto;
+  background-color: rgb(23, 157, 157);
+  box-shadow: 0 2px 8px rgb(190, 214, 190)9, 147, 99;
+  border-radius: 12px;
+  
+}
+
+label{
+    padding: 2px;
+    margin: 3px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+}
+.btn{
+    color: white;
+    background-color: rgb(81, 30, 210);
+    font-size: 20px;
+    width: 25rem;
+    padding: 6px;
+    margin: 6px 14rem;
+    text-align: center;
+}
+
+input{
+    width: 80%;
+    padding: 6px;
+    margin: 6px 4px;
+}
+.sign{
+    padding: 30px 8px;
+    color: white;
+    font-size: 4rem;
+}
+button{
+    text-align: center;
+}
+.pid{
+    padding: 4px;
+    margin: auto;
+    color: aliceblue;
+}
