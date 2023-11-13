@@ -60,12 +60,13 @@ function Login(){
                 <h2 className='sign'>Login</h2>
                 
                 <label htmlFor="email"> Your Email</label> <br></br>
-                <input type="email" value={getEmail} name="email" id="email" placeholder="write your email"  onChange={emailHandler}/><br></br>
+                <input className='text-white' type="email" value={getEmail} name="email" id="email" placeholder="write your email"  onChange={emailHandler}/><br></br>
                 <label htmlFor="pwd">Password</label><br></br>
-                <input type="number" value={getPassword} name="pwd" id="pwd" placeholder="write your password"  onChange={passwordHandler}/><br></br>
-                <div> 
+                <input className='text-white' type="number" value={getPassword} name="pwd" id="pwd" placeholder="write your password"  onChange={passwordHandler}/><br></br>
+                
                     <h3>{errorMsg}</h3>
                 <button type="submit" className="btn" onClick={handleSubmission} disabled={submitButtonDisabled}>Submit</button>
+                <div> 
                 </div>
             </form>
             

@@ -33,13 +33,28 @@ function Header(){
            
            <Link className="nav-link" to="/Login">login</Link>
          </li>
+
+         <li className="nav-item">
+           
+           <Link className="nav-link" to="/payment">payment</Link>
+         </li>
+
+         
         </ul>
         
     </div>
   </div>
+
+  <div className="w-30">
+  <div className="avatar online h-10 w-26">
+  <div className="w-auto text-white">
+      <h2>abc@gmail.com</h2>
+  </div>
+</div>
+  </div>
 </nav>
 
- 
+  
     </div>
    );
 }
