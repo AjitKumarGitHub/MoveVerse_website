@@ -66,10 +66,10 @@ function SignUp(){
                 <input className='text-white' type="email" value={getEmail} name="email" id="email" placeholder="write your email"  onChange={emailHandler}/><br></br>
                 <label htmlFor="pwd">Password</label><br></br>
                 <input className='text-white' type="number" value={getPassword} name="pwd" id="pwd" placeholder="write your password"  onChange={passwordHandler}/><br></br>
-                <div> 
-                    <h3>{errorMsg}</h3>
-                <button type="submit" className="btn" onClick={handleSubmission} disabled={submitButtonDisabled}>Submit</button>
-                </div>
+                 
+                <h3>{errorMsg}</h3>
+                <button type="submit" className="btn justify-center" onClick={handleSubmission} disabled={submitButtonDisabled}>Submit</button>
+                 
             </form>
             <p className='pid'>Have you already SignUp? <Link to="/Login">Login</Link></p>
         </div>

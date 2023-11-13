@@ -50,12 +50,11 @@ function Login(){
    
        return ( <> 
           <div className='h-screen'> 
-          <div className="bg-slate-300 text-blue-600 p-5 text-left">
+          <div className="bg-slate-300 text-blue-600 p-5 text-left md:w-auto w-full">
          <h2 className="text-3xl font-bold">Login</h2>
         </div>
-         <div className="form-container">
+         <div className="form-container md:w-auto w-full">
             
-         
             <form >
                 <h2 className='sign'>Login</h2>
                 
@@ -65,9 +64,8 @@ function Login(){
                 <input className='text-white' type="number" value={getPassword} name="pwd" id="pwd" placeholder="write your password"  onChange={passwordHandler}/><br></br>
                 
                     <h3>{errorMsg}</h3>
-                <button type="submit" className="btn" onClick={handleSubmission} disabled={submitButtonDisabled}>Submit</button>
-                <div> 
-                </div>
+                <button type="submit" className="btn btn-md sm:center" onClick={handleSubmission} disabled={submitButtonDisabled}>Submit</button>
+                {/* <button className="btn btn-active btn-primary">Primary</button> */}
             </form>
             
         </div>
