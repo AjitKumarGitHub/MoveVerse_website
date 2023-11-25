@@ -11,15 +11,16 @@ function Contact(){
         <div className="grid grid-cols-1 md:grid-cols-2 justify-center mt-8 space-x-8">
             <div className="mt-4 text-center ">
                 <h2 className="text-3xl font-bold mb-2 pb-3">Get In Touch</h2>
-                <form action="">
-                    <input className="bg-white input input-bordered input-secondary w-full max-w-xl" type="text" placeholder="Person Name" />
-                    <input className="bg-white input input-bordered input-secondary w-full max-w-xl" type="email" name="" id="" placeholder="Email" />
-                    <input className="bg-white input input-bordered input-secondary w-full max-w-xl" type="number" name="" id="" placeholder="number"/>
-                    <input className="bg-white input input-bordered input-secondary w-full max-w-xl" type="text" name="" id="" placeholder="city" />
+                <form action="" className=" mb-3">
+                    <input className="bg-white input input-bordered input-secondary md:w-full w-56 max-w-xl" type="text" placeholder="Person Name" />
+                    <input className="bg-white input input-bordered input-secondary md:w-full w-56 max-w-xl" type="email" name="" id="" placeholder="Email" />
+                    <input className="bg-white input input-bordered input-secondary md:w-full w-56 max-w-xl" type="number" name="" id="" placeholder="number"/>
+                    <input className="bg-white input input-bordered input-secondary md:w-full w-56 max-w-xl" type="text" name="" id="" placeholder="city" />
                     
-                    <textarea className="bg-white input input-bordered input-secondary w-full max-w-xl" cols={78} placeholder="write message"/>
-                <div>
-                <button className="btn btn-active btn-secondary">Send Message</button>
+                    <textarea className="bg-white input input-bordered input-secondary md:w-full w-56 max-w-xl" cols={78} placeholder="write message"/>
+                <div className="justify-center rounded-md ">
+                <button className="sm:btn btn-active btn-secondary w-1/2 text-white">Send Message</button>
+                
                 </div>
                
                 </form>
