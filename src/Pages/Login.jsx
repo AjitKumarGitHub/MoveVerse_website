@@ -32,7 +32,7 @@ function Login(){
       setSubmitButtonDisabled(true);
        signInWithEmailAndPassword(auth,getEmail,getPassword).then(async(response)=>{
            
-           navigate("/Home");
+           navigate("/");
           setSubmitButtonDisabled(false);
 
        }).catch((err)=>{
@@ -55,7 +55,7 @@ function Login(){
         </div>
          <div className="form-container md:w-auto w-full">
             
-            <form >
+            <form>
                 <h2 className='sign'>Login</h2>
                 
                 <label htmlFor="email"> Your Email</label> <br></br>
@@ -63,10 +63,13 @@ function Login(){
                 <label htmlFor="pwd">Password</label><br></br>
                 <input className='text-white' type="number" value={getPassword} name="pwd" id="pwd" placeholder="write your password"  onChange={passwordHandler}/><br></br>
                 
-                    <h3>{errorMsg}</h3>
-                <button type="submit" className="btn btn-md sm:center" onClick={handleSubmission} disabled={submitButtonDisabled}>Submit</button>
-                {/* <button className="btn btn-active btn-primary">Primary</button> */}
+               <h3>{errorMsg}</h3>
+               <div className='text-center '>
+               <button type="submit" className='btn-md bg-blue-500 text-center text-white rounded-md px-5 mx-12' onClick={handleSubmission} disabled={submitButtonDisabled}>Submit</button>
+               </div>
+               
             </form>
+            
             
         </div>
         </div>
